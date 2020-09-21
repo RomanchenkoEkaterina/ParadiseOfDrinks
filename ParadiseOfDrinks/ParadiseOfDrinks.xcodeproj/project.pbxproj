@@ -16,6 +16,10 @@
 		C6CC393C251887AF00EE9DD8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C6CC393B251887AF00EE9DD8 /* Alamofire */; };
 		C6CC393F251887F700EE9DD8 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C6CC393E251887F700EE9DD8 /* SDWebImage */; };
 		C6CC3941251887F700EE9DD8 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C6CC3940251887F700EE9DD8 /* SDWebImageMapKit */; };
+		C6CC39432518888700EE9DD8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC39422518888700EE9DD8 /* Router.swift */; };
+		C6CC394525188BDF00EE9DD8 /* CocktailsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC394425188BDF00EE9DD8 /* CocktailsAPI.swift */; };
+		C6CC394825188C7900EE9DD8 /* CategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC394725188C7900EE9DD8 /* CategoriesModel.swift */; };
+		C6CC394A25188C9100EE9DD8 /* CocktailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC394925188C9100EE9DD8 /* CocktailsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		C6CC3923251881FE00EE9DD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6CC3926251881FE00EE9DD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6CC3928251881FE00EE9DD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6CC39422518888700EE9DD8 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		C6CC394425188BDF00EE9DD8 /* CocktailsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailsAPI.swift; sourceTree = "<group>"; };
+		C6CC394725188C7900EE9DD8 /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesModel.swift; sourceTree = "<group>"; };
+		C6CC394925188C9100EE9DD8 /* CocktailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,8 @@
 		C6CC3934251882E100EE9DD8 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				C6CC394425188BDF00EE9DD8 /* CocktailsAPI.swift */,
+				C6CC39422518888700EE9DD8 /* Router.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -148,6 +158,7 @@
 		C6CC39382518831B00EE9DD8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C6CC394625188C4D00EE9DD8 /* Decodable Models */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +170,15 @@
 				C6CC3925251881FE00EE9DD8 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C6CC394625188C4D00EE9DD8 /* Decodable Models */ = {
+			isa = PBXGroup;
+			children = (
+				C6CC394725188C7900EE9DD8 /* CategoriesModel.swift */,
+				C6CC394925188C9100EE9DD8 /* CocktailsModel.swift */,
+			);
+			path = "Decodable Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +261,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6CC39432518888700EE9DD8 /* Router.swift in Sources */,
 				C6CC391F251881FD00EE9DD8 /* ViewController.swift in Sources */,
+				C6CC394A25188C9100EE9DD8 /* CocktailsModel.swift in Sources */,
+				C6CC394525188BDF00EE9DD8 /* CocktailsAPI.swift in Sources */,
+				C6CC394825188C7900EE9DD8 /* CategoriesModel.swift in Sources */,
 				C6CC391B251881FD00EE9DD8 /* AppDelegate.swift in Sources */,
 				C6CC391D251881FD00EE9DD8 /* SceneDelegate.swift in Sources */,
 			);
