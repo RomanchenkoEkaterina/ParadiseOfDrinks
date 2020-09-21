@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CocktailsNavigationBar" customModule="ParadiseOfDrinks" customModuleProvider="target">
+            <connections>
+                <outlet property="baseView" destination="kLC-Iu-V2v" id="LzI-Fo-HtM"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="3LX-8F-Ae6"/>
+                <outlet property="filter" destination="9nz-kp-3Ze" id="hf3-b6-1ZN"/>
+                <outlet property="title" destination="7ZW-Wc-1CF" id="x3A-2k-hYE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kLC-Iu-V2v">
+                    <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drinks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZW-Wc-1CF">
+                            <rect key="frame" x="30" y="10.5" width="95" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="95" id="h4q-RE-b1k"/>
+                                <constraint firstAttribute="height" constant="35" id="umX-xN-WDm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nz-kp-3Ze">
+                            <rect key="frame" x="365" y="13.5" width="28" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="249-PR-HeY"/>
+                                <constraint firstAttribute="height" constant="29" id="TLl-Wa-Yk1"/>
+                            </constraints>
+                            <state key="normal" image="Filters"/>
+                            <connections>
+                                <action selector="filterButton:" destination="-1" eventType="touchUpInside" id="gQo-hs-QWX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="7ZW-Wc-1CF" firstAttribute="centerY" secondItem="kLC-Iu-V2v" secondAttribute="centerY" id="2Uf-fT-F7v"/>
+                        <constraint firstItem="9nz-kp-3Ze" firstAttribute="centerY" secondItem="kLC-Iu-V2v" secondAttribute="centerY" id="7dG-Pc-Qb3"/>
+                        <constraint firstAttribute="trailing" secondItem="9nz-kp-3Ze" secondAttribute="trailing" constant="21" id="UJu-qY-tIA"/>
+                        <constraint firstItem="7ZW-Wc-1CF" firstAttribute="leading" secondItem="kLC-Iu-V2v" secondAttribute="leading" constant="30" id="wDJ-fH-GNN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kLC-Iu-V2v" secondAttribute="trailing" id="E42-3v-TwC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="leading" secondItem="kLC-Iu-V2v" secondAttribute="leading" id="YNZ-8o-HHV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="kLC-Iu-V2v" secondAttribute="bottom" id="d9t-nQ-wTx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="kLC-Iu-V2v" secondAttribute="top" id="y3t-vo-HMj"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="25" y="-33"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Filters" width="29" height="29"/>
+    </resources>
+</document>

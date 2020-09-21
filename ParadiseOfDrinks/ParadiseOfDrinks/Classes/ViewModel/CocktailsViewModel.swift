@@ -19,7 +19,7 @@ class CocktailsViewModel {
     
     private init() {}
     
-    var delegate: InputCocktailsListViewControllerProtocol?
+    weak var delegate: InputCocktailsListViewControllerProtocol?
     
 // MARK: - Access to the Model
     
@@ -83,7 +83,6 @@ extension CocktailsViewModel {
                     drinkslist.append(CocktailsModel.Drink(name: drink.name!, thumb: drink.thumbLink!))
                 }
                 self.model.cocktailsByCategory[category] = drinkslist
-                print(category)
                 self.delegate?.reloadTableView()
             case .failure(let error):
                 self.delegate?.errorHandler(error: error)
